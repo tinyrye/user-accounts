@@ -1,0 +1,27 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath "io.ratpack:ratpack-gradle:0.9.9"
+	}
+}
+
+apply plugin: 'groovy'
+apply plugin: 'io.ratpack.ratpack-groovy'
+
+group = "org.tinyrye"
+version = "1.0.0-SNAPSHOT"
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  jcenter()
+}
+
+dependencies {
+	compile localGroovy()
+}
